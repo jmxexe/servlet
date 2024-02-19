@@ -32,8 +32,7 @@ public class GestioneProdottiServlet extends HttpServlet {
 
         }
 
-
-        if(request.getParameter("nomeProdottoDaEliminare") == null) {
+        if(request.getMethod().equalsIgnoreCase("post")) {
             boolean aggiunto = carrello.aggiungiProdotto(new Prodotto(request.getParameter("nomeProdotto"),request.getParameter("descrizione")));
 
             //out.println("<h1> info prodotto inviato: </h1> <p>" + request.getParameter("nomeProdotto") + " " + request.getParameter("descrizione") + "</p>");
