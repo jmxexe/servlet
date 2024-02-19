@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+
+</head>
+<body>
+
+<form action="http://localhost:8080/webApp_war_exploded/Gestione-prodotti" method="post">
+    <h1>aggiungi prodotto</h1>
+    <label for="nomeProdottoDaAggiungere">nome prodotto</label> <br>
+    <input type="text" id="nomeProdottoDaAggiungere" name="nomeProdotto" autocomplete="off"> <br>
+    <label for="descrizione">descrizione prodotto</label> <br>
+    <input type="text" id="descrizione" name="descrizione" autocomplete="off"> <br>
+    <button type="submit">aggiungi</button> <br>
+</form>
+<form action="http://localhost:8080/webApp_war_exploded/Gestione-prodotti" method="get">
+    <h1>elimina prodotto</h1>
+    <label for="nomeProdottoDaEliminare">nome prodotto</label> <br>
+    <input type="text" id="nomeProdottoDaEliminare" name="nomeProdottoDaEliminare" autocomplete="off"> <br>
+    <button type="submit">elimina</button> <br>
+</form>
+<!--    <div>-->
+<!--        <a href="http://localhost:8080/webApp_war_exploded/Gestione-prodotti/carrello">clicca per vedere il contenuto del carrello</a>-->
+<!--    </div>-->
+
+
+</body>
+</html>
